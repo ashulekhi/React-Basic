@@ -5,6 +5,9 @@ import React from 'react'
 import A from './HelloWorld'
 import Greet from './Header'
 import User from './users'
+import Basic from './BasicPage'
+import UserPage from './UserPage'
+
 
 class Student {
 
@@ -34,8 +37,10 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <Greet isLoggedIn = {true} />,
-      <User> </User>
+     /* <Greet isLoggedIn = {true} />,
+      <User> </User>*/
+      //<Basic></Basic>
+      <UserPage></UserPage>
     )
   }
 

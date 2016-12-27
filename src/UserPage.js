@@ -4,25 +4,21 @@
 
 import React from 'react'
 import Header from './Header'
+import Users from './users'
 import Footer from './Footer'
-import Content from './Content'
 
-class Basic extends React.Component{
+export default class userPage extends React.Component{
   constructor(){
     super()
   }
 
   render(){
-
     return(
       <div>
-        <Header isLoggedIn={false}></Header>
-        <Content></Content>
+        <Header isLoggedIn={false} ></Header>
+        <Users></Users>
         <Footer></Footer>
       </div>
     )
   }
 }
-
-
-export default Basic
