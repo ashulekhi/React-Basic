@@ -5,9 +5,11 @@ import React from 'react'
 import A from './HelloWorld'
 import Greet from './Header'
 import User from './users'
-import Basic from './BasicPage'
-import UserPage from './UserPage'
-
+import Prop from './PropTypes'
+import Water from './Day2/question1'
+import UserDetail from './Day2/question3'
+import ShoppingCart from './Day2/question5'
+import StopWatch from './Day2/question6'
 
 class Student {
 
@@ -36,13 +38,22 @@ export default class App extends React.Component {
   }
 
   render() {
+    const user1 = [
+      {name: 'John', age: 25, avatar: 'https://randomuser.me/api/portraits/men/15.jpg'},
+      {name: 'Joe', age: 35, avatar: 'https://randomuser.me/api/portraits/men/13.jpg'},
+      {name: 'Andrei', age: 45, avatar: 'https://randomuser.me/api/portraits/men/10.jpg'},
+      {name: 'Ted', age: 29, avatar: 'https://randomuser.me/api/portraits/men/1.jpg' },
+      {name: 'Ben', age: 30, avatar:'https://randomuser.me/api/portraits/men/2.jpg' }
+    ]
     return (
-     /* <Greet isLoggedIn = {true} />,
+      /*<Greet isLoggedIn = {true} />,
       <User> </User>*/
-      //<Basic></Basic>
-      <UserPage></UserPage>
-    )
-  }
+      //<Prop></Prop>
+      //<Water />
+      //<UserDetail user = {user1} />
+      //<ShoppingCart />
+        <StopWatch> </StopWatch>
+    )  }
 
 }
 

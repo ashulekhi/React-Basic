@@ -3,9 +3,6 @@
  */
 
 import React from 'react'
-import Header from './Header'
-import Footer from './Footer'
-import Content from './Content'
 
 class Basic extends React.Component{
   constructor(){
@@ -15,14 +12,7 @@ class Basic extends React.Component{
   render(){
 
     return(
-      <div>
-        <Header isLoggedIn={false}></Header>
-        <Content></Content>
-        <Footer></Footer>
-      </div>
+      <div></div>
     )
   }
 }
-
-
-export default Basic
